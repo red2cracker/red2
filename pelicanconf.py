@@ -38,6 +38,13 @@ DEFAULT_PAGINATION = 10
 
 # New things for RED2.net
 
+# date format
+DATE_FORMATS = {
+    'en': '%a, %d %b %Y',
+    'ko': '%Y-%m-%d (%a)',
+    'jp': '%Y-%m-%d (%a)'
+}
+
 # Thins to copy to output
 STATIC_PATHS = [
     'images',

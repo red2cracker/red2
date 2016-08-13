@@ -1,7 +1,8 @@
 Title: 타이베리안돈 게임 소개
 Date: 2016-08-13 21:42
 Category: 타이베리안돈
-
+Tags: 타이베리안돈, C&C1
+Authors: 크래커, 불바다
 
 # 타이베리안돈(Tiberian Dawn)
 
