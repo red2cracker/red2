@@ -4,7 +4,8 @@ from __future__ import unicode_literals
 
 AUTHOR = '크래커'
 SITENAME = 'Red2.net'
-SITEURL = ''
+#SITEURL = 'http://red2.net' # PRODUCTION
+SITEURL = 'http://localhost:8000' # TEST
 
 PATH = 'content'
 
@@ -24,10 +25,10 @@ AUTHOR_FEED_RSS = None
 #         ('Python.org', 'http://python.org/'),
 #         ('Jinja2', 'http://jinja.pocoo.org/'),
 #         ('You can modify those links in your config file', '#'),)
-LINKS = None
+LINKS = []
 
 # Social widget
-SOCIAL = None
+SOCIAL = []
 #SOCIAL = (('You can add links in your config file', '#'),
 #          ('Another social link', '#'),)
 
@@ -53,5 +54,26 @@ STATIC_PATHS = [
 
 # Copy destination
 EXTRA_PATH_METADATA = {
-        'extra/red2fav.ico': {'path': 'red2fav.ico'}
+        'extra/red2fav.ico': {'path': 'favicon.ico'}
 }
+
+# Theme settings
+THEME = './themes/red2'
+RED2_FAVICON = '/red2fav.ico' # be sure to update STATIC_PATHS and EXTRA_PATH_METADATA.
+#DISPLAY_CATEGORIES_ON_SUBMENU = True
+DISPLAY_CATEGORIES_ON_MENU = False
+MENUITEMS = [
+    ('메인', '/#'),
+    ('게임', '/game.html'),
+    ('컨텐츠', '/contents.html'),
+    ('커뮤니티', '/#'),
+    ('자료실', '/#'),
+    ('사이트', '/#')
+]
+# Note: you specify save_as meta data in wiki.md to generate wiki.html!
+# That's how you get expectable file names for the MENUITEMS.
+
+# Feed
+FEED_DOMAIN = SITEURL
+FEED_MAX_ITEMS = 100
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
